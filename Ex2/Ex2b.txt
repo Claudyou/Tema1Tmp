@@ -1,0 +1,7 @@
+Thr a, Thr b
+
+Thr a- calculeaza `max(label[0], ... ,label[n-1])+1`(dar nu apuca sa scrie in `label[i]`) 	 ->(apoi)
+Thr b- intra si el si calculeaza `max(label[0], ... ,label[n-1])+1` si scire in `label[i] 	 ->
+Thr a- scrie in `label[i]` valoarea calculata ( in momentul acesta, label[Thr a] = label[Thr b]) ->
+In while la comparatia tuplei `(label[i],i) > (label[k],k)`, daca nu se ia in considerare si `i > k`,
+ambele threaduri vor avea acces la zona critica. ==> Nu este suficienta doar comparatie etichetei `label`.

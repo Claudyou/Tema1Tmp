@@ -1,0 +1,5 @@
+Nu functioneaza corect, deoarece pot trece mai mult de `QSIZE` threaduri de while,
+si dupa aceea sa astepte deblocarea lock-ului, ceea ce inseamna ca daca se deblocheaza
+nu mai verifica daca are voie sa introduca sau nu si poate introduce peste alte elemente
+din `items` fara a fi scoase. Avem si implementarea corecta.
+

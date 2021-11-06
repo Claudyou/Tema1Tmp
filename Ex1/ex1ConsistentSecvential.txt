@@ -1,0 +1,3 @@
+Este consistent secvential deoarece putem obtine liniarizabilitatea prin mutarea
+ordinii operatiilor pe threaduri, fara a modifica oridnea operatiilor din
+cadrul unui thread(Se observa in imagine). 

@@ -1,0 +1,3 @@
+Se prefera ca utilizarea apelului lock() sa fie executat inaintea blocului try, 
+deoarece daca metoda intimpina o exceptie, funcita `unlock()` va debloca lock-ul
+desi nu a fost blocat, ceea ce poate duce la erori.

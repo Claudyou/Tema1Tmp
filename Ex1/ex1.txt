@@ -1,0 +1,3 @@
+Nu este liniarizabil. Ultimul read de 1 ( read():1 ) nu se poate
+realiza, deoarece valoarea din buffer a fost schimbata, inevitabil, cu 2
+si nu mai avem posibilitatea de a scrie 1, pentru a putea citi 1.
